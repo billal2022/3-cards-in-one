@@ -1,0 +1,157 @@
+:root{
+/*primary*/   
+--stars-name: hsl(300, 43%, 22%);
+--card-name-child:hsl(333, 80%, 67%); 
+--title-child:hsl(303, 10%, 53%);
+--card-disc:hsl(300, 24%, 96%);
+--card-names:hsl(0, 0%, 100%);
+/* font familys*/
+--font-family-1: 'Big Shoulders Display', cursive;
+--font-family-star-names: 'Inter', sans-serif;
+--font-family-3: 'Kumbh Sans', sans-serif;
+--font-family-title: 'League Spartan', sans-serif;
+--font-family-5: 'Lexend Deca', sans-serif;
+/*font size*/
+--font-size:15px;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+   height:100vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 120px;
+}
+body::after{
+    content: url(images/bg-pattern-top-mobile.svg);
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+.main-box{
+   width: 100%;
+   height: 100%;
+ display: grid;
+ grid: auto/ 1fr 1fr;
+ gap: 55px;
+
+}
+/*top left title*/
+.title-contianer{
+    display: grid;
+    grid:autp/ 1fr;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.title{
+font-family: var(--font-family-title);
+padding-bottom: 15px;
+padding-right: 190px;
+color: var(--stars-name);
+font-size: 43px;
+letter-spacing: -2px;
+}
+.title-child{
+font-family: var(--font-family-5)   ;
+font-size:var(--font-size) ;
+padding-right:71px;
+
+color: var(--title-child);
+font-size: 14px;
+font-weight: 500;   
+}
+/* right containers*/
+ 
+  .right-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+      }
+       /*star icon*/
+.icon-icon-star::before {
+    content: "\e900 \e900 \e900 \e900 \e900";
+    color: #ef9546;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 12px;
+    letter-spacing: 6px;
+  } 
+  .icon-icon-star{
+    background-color:var(--card-disc);
+    border-radius: 6px;
+    margin: 5px;
+    padding: 14px 0px ; 
+    width: 350px;
+    font-size: 15px; 
+}
+.right-container .icon-icon-star:nth-child(2){
+    margin-left: 34px;
+}
+.right-container .icon-icon-star:nth-child(3){
+    margin-left: 68px;
+}
+.star-names{
+    color: var(--stars-name);
+    font-family: var(--font-family-star-names);
+    font-weight: 900;
+    font-size: 12px;
+}
+  /*bottom container*/
+  .bottom-container{
+    display: grid;
+    grid: auto/ 1fr 1fr 1fr;
+    grid-column: 2 span;
+    gap: 25px;
+  }
+  .bottom-childs{
+    background-color: var(--stars-name);
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    padding: 30px 30px;
+    height: 200px;
+  }
+  .image-title{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .image-title p:nth-child(1){
+    color: var(--card-names);
+    font-family: var(--font-family-title);
+    font-size: 14px;
+    padding-bottom: 3px;
+  }
+  .image-title p:nth-child(2){
+    color: var(--card-name-child);
+    font-family: var(--font-family-title);
+    font-size: 14px;
+  }
+.p{
+    color: var(--card-disc) ;
+    font-size: 13px;
+    padding-right: 20px;
+    line-height: 1.4;
+    font-family: var(--font-family-5);
+}
+img{
+    border-radius: 100px;
+    size: 10px;
+    width: 35px;
+    margin-right: 20px;
+}
+.bottom-container .bottom-childs:nth-child(2){
+    margin-top: 20px;
+}
+.bottom-container .bottom-childs:nth-child(3){
+    margin-top: 40px;
+}
+
